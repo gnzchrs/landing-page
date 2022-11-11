@@ -1,0 +1,54 @@
+@media screen and (max-width: 720px) {
+  .image {
+    min-height: 20rem;
+    width: 15rem;
+  }
+  ion-icon {
+    font-size: 20px;
+  }
+  .right {
+    height: 100%;
+    padding-bottom: 5em;
+  }
+  .left {
+    height: 100%;
+    padding-top: 5em;
+    padding-bottom: 10em;
+  }
+  ion-icon {
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: 720px) {
+    .image {
+      min-height: 35rem;
+      width: 25rem;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .image {
+      min-height: 20rem;
+      min-height: 20rem;
+      width: 15rem;
+    }
+    ion-icon {
+      font-size: 20px;
+    }
+    .right {
+      height: 100%;
+      padding-bottom: 5em;
+      padding-top: -15em;
+    }
+  }
+
+  @media screen and (max-width: 412px) {
+    .image {
+      min-height: 20rem;
+      width: 15rem;
+    }
+    ion-icon {
+      font-size: 25px;
+    }
+  }
+}
