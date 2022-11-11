@@ -1,4 +1,4 @@
-AOS.init({ delay: 300, once: true });
+AOS.init({ delay: 1000, once: true });
 
 var i = 0;
 var p = 0;
