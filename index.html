@@ -22,12 +22,18 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col d-flex align-items-center justify-content-center left">
-          <img
-            src="./assets/img/IMG_20220808_124307-removebg-preview.png"
+          <button
             class="card image"
-            data-aos="fade-up"
-            data-aos-delay="10"
-          />
+            data-bs-toggle="modal"
+            data-bs-target="#profile"
+          >
+            <img
+              src="./assets/img/IMG_20220808_124307-removebg-preview.png"
+              data-aos="fade-up"
+              data-aos-delay="10"
+              class="image"
+            />
+          </button>
         </div>
         <div
           class="col d-flex flex-column align-items-start justify-content-center right"
@@ -36,27 +42,84 @@
           <h3 id="position" class="ps-5"></h3>
 
           <div class="d-flex align-self-center m-3" data-aos="fade-up">
-            <a href="https://www.facebook.com/gnzchrs" target="_blank">
-              <ion-icon name="logo-facebook" class="social"></ion-icon
+            <a
+              href="https://www.facebook.com/gnzchrs"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Facebook Profile"
+            >
+              <ion-icon
+                name="logo-facebook"
+                class="social"
+                data-toggle="tooltip"
+                data-placement="bottom"
+              ></ion-icon
             ></a>
-            <a href="https://www.linkedin.com/in/gnzchrs/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/gnzchrs/"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="LinkedIn Profile"
+            >
               <ion-icon name="logo-linkedin" class="social"></ion-icon
             ></a>
-            <a href="https://www.instagram.com/gnzchrs/" target="_blank">
-              <ion-icon name="logo-instagram" class="social"></ion-icon
-            ></a>
-            <a href="https://github.com/gnzchrs" target="_blank">
+
+            <a
+              href="https://github.com/gnzchrs"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Github Profile"
+            >
               <ion-icon name="logo-github" class="social"></ion-icon
+            ></a>
+            <a
+              href="http://m.me/gnzchrs"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Chat me on messenger."
+            >
+              <ion-icon
+                name="chatbubble-ellipses-outline"
+                class="social"
+              ></ion-icon
             ></a>
           </div>
           <div
-            class="d-grid gap-2 col-6 mx-auto mt-3"
+            class="d-grid gap-2 col-6 mx-auto mt-2"
             data-aos="fade-up"
             data-aos-delay="1500"
           >
-            <button type="button" class="btn btn-lg btn-outline-primary">
+            <button type="button" class="btn btn-lg btn-outline-primary m-3">
               View Resume
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="profile"
+      data-bs-keyboard="true"
+      tabindex="-1"
+      aria-labelledby="pics"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="background-color: #404258; border: none"
+        >
+          <div class="modal-body m-auto">
+            <img
+              src="./assets/img/IMG_20220808_124307-removebg-preview.png"
+              data-aos="fade-up"
+              data-aos-delay="10"
+              class="image"
+            />
           </div>
         </div>
       </div>
@@ -81,5 +144,11 @@
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+      PDFObject.embed(
+        "../assets/RESUME_Christopher D. Gonzaga.pdf",
+        "#example1"
+      );
+    </script>
   </body>
 </html>
